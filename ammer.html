@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ammerschlag</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="fonts_inconsolata">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("Ammerschlag_inside_1.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <div class="w3-row w3-padding w3-black">
+  <div class="w3-col s3">
+  <a href="#home">Home</a>
+  </div>
+  <div class="w3-col s3">
+  <a href="#about">Über Uns</a>
+  </div>
+  <div class="w3-col s3">
+  <a href="#menu">Getränkekarte</a>
+  </div>
+  <div class="w3-col s3">
+  <a href="#events">Veranstaltungen</a>
+  </div>
+  <div class="w3-col s3">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-sepia" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Öffnungszeiten
+    <br>
+    So-Do 15:00-01:00 Uhr
+    <br>
+    Fr-Sa 15:00-03:00 Uhr 
+    </span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Ammer<br>Schlag</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Ammergasse 13</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large w3-sepia-min">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Über Uns</span></h5>
+    <p>Ammerschlag wurde gegründet bla bla bla. Kleine Geschicht hier </p>
+
+
+    <img src="Ammerschlag_outside_1.jpg" style="width:100%;max-width:700px" class="w3-margin-top">
+    
+    <div class="w3-panel w3-leftbar beaver">
+
+    <p><strong>Öffnungszeiten:</strong> So-Do 15:00-01:00 Uhr <br>  <span style='margin-left:151px'>Fr-Sa 15:00-03:00 Uhr</span></p>
+    <p><strong>Telefonnummer:</strong> 07071 51591 (Reservierung bis 20:30Uhr möglich)</p>
+    <p><strong>Adresse:</strong> Ammergasse 13, 72070 Tübingen</span></p>
+    
+    </div>    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Getränkekarte</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bier');" id="myLink">
+        <div class="w3-col s2 tablink">Bier</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Wein');">
+        <div class="w3-col s2 tablink">Wein</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Kurze');">
+        <div class="w3-col s2 tablink">Kurze</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Longdrinks');">
+        <div class="w3-col s4 tablink">Longdrinks</div>
+      </a>
+      <br>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Alkoholfreies');">
+        <div class="w3-col s4 tablink">Alkoholfreies</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Heisse');">
+        <div class="w3-col s4 tablink">Heiße Getränke</div>
+      </a>
+    </div>
+    
+
+    <div id="Bier" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Vom Fass</h5>
+      <p class="w3-text-grey">Waldhaus Export 2.70 / 3.80</p>
+      <p class="w3-text-grey">Bitburger Pils 2.90 / 3.80</p>
+      <p class="w3-text-grey">Zwiefalter Hefeweizen 2.70 / 3.80</p>   
+      <p class="w3-text-grey">Zwiefalter Kellerbier 2.70 / 3.80</p>             
+      <p class="w3-text-grey">Guinnes 2.60 / 4.70</p>
+      <br>
+      <h5>Flasche</h5> 
+      <p class="w3-text-grey">Paulaner Kristallklar 3.80</p>                       
+      <p class="w3-text-grey">Schneider Weisse  3.80</p>                       
+      <p class="w3-text-grey">Paulaner Alkoholfrei Hefe 3.80</p>                       
+      <p class="w3-text-grey">Pils Alkoholfrei 2.70</p>                       
+      <p class="w3-text-grey">Waldhaus Helles 2.70</p>                       
+    </div>
+
+    <div id="Wein" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Weiß</h5>
+      <p class="w3-text-grey">Menard 2.60 / 4.80</p>
+      <p class="w3-text-grey">Riesling 2.60 / 4.80</p>
+      <p class="w3-text-grey">Pinot Grigio 2.60 / 4.80</p> 
+      
+      <h5>Rose</h5>
+      <h5>Rot</h5>
+    </div>  
+
+    <div id="Kurze" class="w3-container menu w3-padding-48 w3-card">
+    </div>  
+
+    <div id="Longdrinks" class="w3-container menu w3-padding-48 w3-card">
+    </div>  
+    
+    <div id="Alkoholfreies" class="w3-container menu w3-padding-48 w3-card">
+    </div>  
+
+    <div id="Heisse" class="w3-container menu w3-padding-48 w3-card">
+    </div>  
+
+    <img src="hefe.jpg" style="width:100%;max-width:700px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="events" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Veranstaltungen</span></h5>
+      <div class="w3-panel w3-leftbar beaver">
+    	<p> Pub Quiz: jeden Mittwoch von 20Uhr bis 22Uhr.</p>
+    	<p> Jam Session: jeden ersten Sonntag des Monates.</p>
+    	<p>Nächste Mahjongturnier: ?/10/2024.</p>
+    
+      </div>
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
